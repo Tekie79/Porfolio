@@ -120,11 +120,11 @@ section{
     padding: 100px 0;
 }
 
-.about, .skills{
+.about, .services, .skills{
     font-family: 'Poppins', sans-serif;
 }
 
-.about .about-content, .skills .skills-content{
+.about .about-content, .services .serv-content, .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -193,6 +193,53 @@ section .title::before{
     color: crimson;
     background: none;
 }
+/* Skills section styling */
+
+.services{
+    color: #fff;
+    background: #111;
+}
+.services .title::before{
+    background: #fff;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.services .serv-content .card:hover{
+    background: crimson;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+
+}
+
+
+
+
+
+
+
 
 /* Skills section styling */
 
@@ -363,6 +410,10 @@ text-align: justify;
     .about .about-content .right{
         flex: 100%;
     }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
     .skills .skills-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -381,6 +432,7 @@ text-align: justify;
     .home .home-content a{
         font-size: 20px;
     }
+    .services .serv-content .card,
     .skills .skills-content .column{
         width: 100%;
     }
