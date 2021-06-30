@@ -6,6 +6,9 @@ padding: 0;
 box-sizing: border-box;
 text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .max-width{
     max-width: 1300px;
@@ -119,7 +122,7 @@ section{
     padding: 100px 0;
 }
 
-.about, .services, .skills, .projects, .contact{
+.about, .services, .skills, .projects, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
@@ -479,7 +482,21 @@ margin-bottom: 15px;
     background: none;
 }
 
+/* footer section styling */
 
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
 
 
 
