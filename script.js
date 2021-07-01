@@ -33,6 +33,16 @@ $(document).ready(function(){
         $('.menu-btn i').removeClass("active");
         
     })
+
+    // Typing animation script
+
+    const typed = new Typed(".typing", {
+        strings: ["Web Developer", "App Developer", "Graphics Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    })
+
     
     // owl carousel script
     $('.carousel').owlCarousel({
