@@ -351,6 +351,9 @@ text-align: justify;
 .skills-content .right .mongo::before{
     width: 50%;
 }
+.skills-content .right .adobe::before{
+    width: 90%;
+}
 
 
 /* Projects section styling */
