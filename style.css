@@ -335,7 +335,7 @@ section .title::before {
   width: 75%;
 }
 .skills-content .right .react::before {
-  width: 65%;
+  width: 80%;
 }
 .skills-content .right .native::before {
   width: 60%;
